@@ -9,9 +9,7 @@ public class Main {
         System.out.println("Area 1: "+square.calculateArea());
 
 
-        Shapes shapes = (Square square2) -> {
-            return square2.calculateArea();
-        };
+        Shapes shapes = Square::calculateArea;
 
         System.out.println("Area :"+ shapes.getArea(square));
     }
